@@ -33,7 +33,7 @@ describe("server endpoint tests", () => {
     })
     it("returns the newly created user", async () => {
       const response = await request(server).post('/api/auth/register').send(dummyData)
-      expect(response.body[0]).toMatchObject({id:1, username: 'nickS'})
+      expect(response.body).toMatchObject({id:1, username: 'nickS'})
     })
   })
 
