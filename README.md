@@ -76,6 +76,10 @@ These goals may or may not be things you have learned in this module but they bu
 Be prepared to demonstrate your understanding of this week's concepts by answering questions on the following topics.
 
 1. Differences between using _sessions_ or _JSON Web Tokens_ for authentication.
+--Sessions data is stored on the server-side and sends data to the client via cookies, while JWTs are stored on the client machine (such as in local storage)
 2. What does `bcryptjs` do to help us store passwords in a secure manner?
+-- bcryptjs hashes the password, which is a one-way process.  This is more secure than encrypting, as the hash cannot be decrypted
 3. How are unit tests different from integration and end-to-end testing?
+-- unit tests are built to test small units of code, such as specific functions or variables, while integration tests focus on testing the interactivity between different parts of the application.  End to end tests are meant to simulate user interaction with the app, and cover the entirety of the application
 4. How does _Test Driven Development_ change the way we write applications and tests?
+--by writing tests first, and then writing only the code required to make the tests pass, we ensure that we are writing clean and concise code.  It prevents us from over-coding
