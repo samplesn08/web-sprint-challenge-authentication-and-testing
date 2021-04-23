@@ -17,7 +17,7 @@ server.use('/api/auth', authRouter);
 server.use('/api/jokes', restrict, jokesRouter); // only logged-in users should have access!
 
 server.get("/", (req, res) => {
-    res.json({ api: "up" });
+    res.json("It's workingggg!");
 });
   
 server.use((err, req, res, next) => { // eslint-disable-line
